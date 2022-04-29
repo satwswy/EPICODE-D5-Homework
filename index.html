@@ -79,6 +79,8 @@
         }
         #secondpart{
             display: inline-block;
+            position: relative;
+            bottom: 225px;
         }
 
         #thirdpart{
@@ -86,10 +88,11 @@
             background-color: aqua;
             background-image: url('success-mindset.webp');
             position: relative;
-            bottom: 105px;
+            
             left: 235px;
             width: 1200px;
             height: 800px;
+            overflow: hidden;
             
             
         }
@@ -152,6 +155,7 @@
         }
         #motivationletter{
             
+            
         }
         #motivletter{
             color: white;
@@ -171,9 +175,22 @@
         }
         #lastspan{
             position: relative;
-            top: 80px;
+            top: 140px;
             left: 480px;
-            width: 500px
+            width: 500px;
+            transform: translateX(800px);
+        }
+        #thirdpart:hover #lastspan{
+            transform: translateX(0px);
+            transition: transform 0.3s;
+        }
+        #thirdpart:hover{
+            filter: brightness(95%);
+        }
+        #nice{
+            text-align: center;
+            position: relative;
+            left: 513px;
         }
     </style>
 
@@ -246,7 +263,7 @@
     </div> 
 
     <div id="thirdpart">
-        <div id="motivationletter"> <h2 id="motivletter">MOTIVATION LETTER</h2>
+        <div id="motivationletter"> <h2 id="motivletter">MOTIVATION LETTER </h2> <span id="nice">(hover to view)</span>
             <div id="lastspan"><span id="motiletter">A person who lives with integrity and acts honestly. I have self-confidence, I am very hardworking and passionate about coding, I have valuable industrial experience and I can perform exceptionally well in any team or individual work.</span>
             </div>
         </div>
