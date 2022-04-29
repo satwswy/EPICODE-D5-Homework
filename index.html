@@ -14,7 +14,7 @@
         #image1{
             background-color: black;
             text-align: center;
-            position: relative;
+        
            
             
         }
@@ -79,20 +79,19 @@
         }
         #secondpart{
             display: inline-block;
-            position: relative;
-            bottom: 225px;
+            vertical-align: top;
+         
         }
 
         #thirdpart{
             display: inline-block;
             background-color: aqua;
             background-image: url('success-mindset.webp');
-            position: relative;
             
-            left: 235px;
             width: 1200px;
             height: 800px;
             overflow: hidden;
+            margin-left: 200px;
             
             
         }
@@ -104,8 +103,7 @@
             font-weight: 700;
             color: rgb(209, 189, 189);
             font-size: large;
-            position: relative;
-            bottom: 365px;
+        
             
         }
         #secondlist{
@@ -125,9 +123,8 @@
             font-weight: 700;
             color: rgb(209, 189, 189);
             font-size: large;
-            position: relative;
-            left: 2px;
-            bottom: 112px;
+        
+          
         }
         #h3{
             text-align: center;
@@ -154,42 +151,51 @@
             font-size: x-large;
         }
         #motivationletter{
-            
+            padding-top: 250px;
             
         }
         #motivletter{
+           
             color: white;
             font-size: xx-large;
             font-family: Arial, Helvetica, sans-serif;
             text-decoration: underline;
-            position: relative;
-            left: 410px;
+        
+           
             font-weight: 700;
             
         }
         #motiletter{
+            width: 700px;
+            position: absolute;
             color: white;
             font-size:xx-large;
             font-weight: 700;
+            visibility: hidden;
+            right: 0;
+            transition: 0.3s ease;
             
         }
         #lastspan{
-            position: relative;
-            top: 140px;
-            left: 480px;
+            
+        
             width: 500px;
-            transform: translateX(800px);
+            
         }
-        #thirdpart:hover #lastspan{
-            transform: translateX(0px);
-            transition: transform 0.3s;
+        
+
+        #thirdpart:hover #motiletter{
+            transform: translateX(-160px);
+            transition: 0.3s ease;
+            visibility: visible;
+          
         }
         #thirdpart:hover{
             filter: brightness(95%);
         }
         #nice{
             text-align: center;
-            position: relative;
+        
             left: 513px;
         }
         #facebook{
@@ -200,9 +206,8 @@
             display: inline-block;
             font-size: 12pt;
             border-radius: 50px;
-            position: relative;
-            bottom: 124px;
-            left: 180px;
+         
+            
         }
         #twitter{
             background-color: white;
@@ -212,9 +217,7 @@
             display: inline-block;
             font-size: 12pt;
             border-radius: 50px;
-            position: relative;
-            bottom: 156px;
-            left: 300px;
+
         }
         #instagram{
             background-color: rgb(171, 84, 84);
@@ -224,16 +227,18 @@
             display: inline-block;
             font-size: 12pt;
             border-radius: 50px;
-            position: relative;
+      
             bottom: 189px;
             left: 403px;
             
         }
         #my-socials{
-            position: relative;
+            display: inline-block;
+           
+            
         }
         #socials{
-            position: relative;
+            display: inline-block;
             font-size: xx-large;
             font-family: Arial, Helvetica, sans-serif;
             bottom: 90px;
@@ -251,7 +256,7 @@
             text-decoration: none;
         }
         #gmail{
-            position: relative;
+            display: inline-block;
             font-size: xx-large;
             font-family: Arial, Helvetica, sans-serif;
             bottom: 290px;
@@ -264,7 +269,7 @@
             display: inline-block;
             font-size: 12pt;
             border-radius: 50px;
-            position: relative;
+            
             bottom: 332px;
             left: 400px;
             background-color: brown;
@@ -273,6 +278,22 @@
             color: white;
             text-decoration: none;
         }
+        #page-content {
+            display: block;
+            height: 100%;
+        }
+        #secondpart {
+            display: inline-block;
+        }
+        #secondpart > *{
+            vertical-align: top;
+        }
+        #lastdiv{
+            position: relative;
+            bottom: 120px;
+            
+        }
+    
     </style>
 
 
@@ -304,6 +325,7 @@
     <div id="About-me">
         <h1 id="AM">ABOUT ME</h1>
     </div>
+    <div id="page-content">
     <div id="secondpart">
         <div id="firstlist">
             <h2 id="h3">Info</h2>
@@ -350,74 +372,27 @@
         </div>
 
     </div>
+    <div id="lastdiv">
+    <div id="buisness">
+        <div id="gmail">For Buisness propositions:</div>
+
+            <button id="gmail-button"><a id="gmail2" href="https://www.google.com/intl/el/gmail/about/">GMAIL</a></button>
+
+    </div>
     <div id="my-socials">
         <div id="socials">My socials:</div>
         <button id="facebook"> <a id="facebook2" href="https://www.facebook.com/">FACEBOOK</button></a>
         
-    </div>    
-    <div>
-        <button id="twitter"><a id="twitter2" href="https://twitter.com/?lang=el">TWITTER</button></a>
-    </div>   
-    <div>
-        <button id="instagram"><a id="instagram2" href="https://www.instagram.com/">INSTAGRAM</button></a>
-    </div>   
-
-    </div>
-
-
-
-    </div>
-
-
-    <div id="buisness">
-        <div id="gmail">For Buisness propositions:</div>
-        <div>
-            <button id="gmail-button"><a id="gmail2" href="https://www.google.com/intl/el/gmail/about/">GMAIL</a></button>
-        </div> 
-    </div>
-
-
-
-
-
-
-s
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <button id="twitter"><a id="twitter2" href="https://twitter.com/?lang=el">TWITTER</button></a>
+        
+            <button id="instagram"><a id="instagram2" href="https://www.instagram.com/">INSTAGRAM</button></a>
+          
     
+    </div>    
+    
+    </div>
+    </div>
 </div>
-
-
-
-
-
 
 
 
